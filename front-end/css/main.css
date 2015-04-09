@@ -1,0 +1,824 @@
+/*
+	400
+	font-family: 'Adobe Caslon W01', serif;
+	
+	500, 700
+	font-family: 'Brandon Grotesque W01', sans-serif;
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0 !important;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	background: #fff;
+	color: #58595b;
+	font-family: 'Adobe Caslon W01', serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 1em;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 120em;
+	position: relative;
+}
+
+a {
+	color: #fa9c35;
+	text-decoration: none;
+}
+
+a:link {
+	color: #fa9c35;
+}
+
+a:visited {
+	color: #fa9c35;
+}
+
+a:hover,
+a:focus {
+	color: #00a7e2;
+}
+
+a:active {
+	color: #fa9c35;
+}
+
+::-moz-selection {
+	background: #00a7e2;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+::selection {
+	background: #00a7e2;
+	color: #fff;
+	text-shadow: none !important;
+}
+
+input,
+button,
+select,
+textarea {
+	background-color: #fff;
+	border-radius: 0;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input.text,
+textarea {
+	-webkit-appearance: none;
+	border: 1px solid #acacad;
+	padding: 0.5em;
+}
+
+select {
+	border: 1px solid #acacad;
+	padding: 0.5em;
+}
+
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input.text:focus,
+textarea:focus,
+select:focus {
+	border-color: #00a7e2;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #acacad;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #acacad;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #acacad;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #acacad;
+}
+
+label {
+	color: #00a7e2;
+}
+
+a.btn,
+input.btn,
+div.btn,
+input[type="submit"],
+button {
+	-webkit-appearance: none;
+	background-color: #00a7e2;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding: 0.75em 1.5em;
+	text-decoration: none;
+}
+
+a.btn:hover,
+input.btn:hover,
+div.btn:hover,
+input[type="submit"]:hover,
+button:hover {
+	background-color: #fa9c35;
+	text-decoration: none;
+}
+
+input.btn:focus,
+input[type="submit"]:focus,
+button:focus {
+	background-color: #fa9c35;
+}
+
+a.btn.disabled,
+input.btn.disabled,
+div.btn.disabled,
+input[type="submit"].disabled,
+button.disabled {
+	background-color: #e9ebed;
+	color: #58595b;
+	cursor: default;
+}
+
+textarea {
+	resize: vertical;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #00a7e2;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	margin: 0.5em 0;
+}
+
+h1 {
+	font-size: 3.998em;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.827em;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 1.999em;
+	line-height: 1.3;
+}
+
+h4 {
+	font-size: 1.414em;
+	line-height: 1.4;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+	margin: 32px 0 0.5em 0;
+}
+
+img, object, embed {
+	height: auto !important;
+	max-width: 100%;
+}
+
+.video-container {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
+
+.book-room {
+	background: #fa9c35;
+	padding: 1em 0;
+	text-align: center;
+}
+
+.book-room .header {
+	color: #fff;
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.content {
+	margin: 0 auto;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.hero {
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hero img {
+	display: block;
+	left: 50%;
+	margin-left: -960px;
+	max-width: none;
+	position: absolute;
+	z-index: 1;
+}
+
+.hero .overlay {
+	background: rgba(0, 183, 247, 0.86);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 550px;
+	z-index: 2;
+}
+
+.hero .overlay:after {
+	border-color: transparent transparent transparent rgba(0, 183, 247, 0.86);
+	border-style: solid;
+	border-width: 300px 0 300px 75px;
+	content: '\0020';
+	height: 0;
+	left: 100%;
+	margin-top: -300px;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	width: 0;
+	z-index: 2;
+}
+
+.hero .overlay-content {
+	padding: 2em 0 2em 3em;
+	position: relative;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.hero .icon {
+	display: block;
+	margin-bottom: 1.5em;
+	margin-top: -2em;
+	position: relative;
+}
+
+.hero .icon:before,
+.hero .icon:after {
+	background: #57c6ed;
+	content: '\0020';
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 26%;
+}
+
+.hero .icon:before {
+	left: 50%;
+	margin-left: 3em;
+}
+
+.hero .icon:after {
+	margin-right: 3em;
+	right: 50%;
+}
+
+.hero .icon svg {
+	display: block;
+	fill: #ade4f8;
+	height: 4em;
+	margin: 0 auto;
+	width: 4em;
+}
+
+.hero .title {
+	color: #fff;
+	line-height: 1;
+	margin: 0;
+}
+
+.hero .sub-title {
+	color: #221f1f;
+	font-size: 1.414em;
+	margin: 0 0 0.5em 0;
+	text-transform: uppercase;
+}
+
+.hero .cta {
+	background: none;
+	color: #ade4f8;
+	display: inline-block;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-size: 1.125em;
+	margin-top: 1em;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.hero .cta:hover,
+.hero .cta:focus {
+	background: #fff;
+	color: #00a7e2;
+}
+
+.hp-event-search {
+	background: #ededee;
+}
+
+.hp-event-search .header {
+	color: #808285;
+	letter-spacing: 0.1em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.hp-event-search .form {
+	float: left;
+	width: 75%;
+}
+
+.hp-event-search button {
+	float: right;
+	position: relative;
+	width: 25%;
+}
+
+.hp-event-search button .icon {
+	position: absolute;
+	left: -1em;
+	border-radius: 100%;
+	background: #fa9c35;
+	top: 50%;
+	padding: 0.5em;
+	margin-top: -1em;
+}
+
+.hp-event-search button svg {
+	fill: #fff;
+	display: block;
+	width: 1em;
+	height: 1em;
+}
+
+.site-header {
+	padding: 2em 0;
+	position: relative;
+	z-index: 10;
+}
+
+.site-header .phone {
+	font-size: 1.414em;
+	position: absolute;
+	right: 80px;
+	top: 4em;
+}
+
+.site-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.site-logo img {
+	display: block;
+	margin: 0 auto;
+}
+
+.site-nav {
+	position: absolute;
+	right: 20em;
+	top: 3em;
+}
+
+.site-nav .nav-icon,
+.site-nav .subnav-icon {
+	display: none;
+}
+
+.site-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav .main-nav {
+	position: relative;
+	z-index: 3;
+}
+
+.site-nav .main-nav > li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	width: 14em;
+}
+
+.site-nav .main-nav > li > a {
+	border-top: 1px solid #fff;
+	display: block;
+	padding: 1.5em 0;
+}
+
+.site-nav .main-nav > li:hover > a {
+	border-color: #fa9c35;
+}
+
+.site-nav .main-nav > li > a .title {
+	color: #00a7e2;
+	display: block;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-size: 1.414em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.site-nav .main-nav > li:hover > a .title {
+	color: #fa9c35;
+}
+
+.site-nav .main-nav > li > a .sub-title {
+	color: #221f1f;
+}
+
+.site-nav .menu {
+	background: #00a7e2;
+	height: 0;
+	left: 50%;
+	margin-left: -7em;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-moz-transition: transform 200ms ease-out, opacity 200ms ease-out;
+	-o-transition: transform 200ms ease-out, opacity 200ms ease-out;
+	-webkit-transition: transform 200ms ease-out, opacity 200ms ease-out;
+	transition: transform 200ms ease-out, opacity 200ms ease-out;
+	-moz-transition-delay: 200ms;
+	-o-transition-delay: 200ms;
+	-webkit-transition-delay: 200ms;
+	transition-delay: 200ms;
+	width: 14em;
+	z-index: 1;
+}
+
+.site-nav .menu:before {
+	border-color: #fff transparent transparent transparent;
+	border-style: solid;
+	border-width: 0.375em 0.75em 0 0.75em;
+	content: '\0020';
+	left: 50%;
+	height: 0;
+	margin-left: -0.75em;
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	width: 0;
+}
+
+.site-nav .menu li {
+	padding: 0.25em 1.25em;
+}
+
+.site-nav .menu a {
+	color: #fff;
+	display: block;
+	font-family: 'Adobe Caslon W01', serif;
+	font-weight: 400;
+}
+
+.site-nav .menu a:hover {
+	color: #221f1f;
+}
+
+.site-nav .main-nav > li:hover > .menu {
+	height: auto;
+	opacity: 1;
+	overflow: visible;
+	padding: 1.5em 0 1em 0;
+	-moz-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+.site-search {
+
+}
+
+.site-search .search-icon {
+	cursor: pointer;
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	position: absolute;
+	right: 15em;
+	top: 4.5em;
+}
+
+.site-search.active .search-icon {
+	background: #00a7e2;
+}
+
+.site-search .search-icon svg {
+	display: block;
+	fill: #00a7e2;
+	height: 1.75em;
+	width: 1.75em;
+}
+
+.site-search .search-icon:hover svg {
+	fill: #fa9c35;
+}
+
+.site-search.active .search-icon svg {
+	fill: #fff;
+}
+
+.site-search .search-modal {
+	background: #ededee;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-moz-transition: transform 200ms ease-out;
+	-o-transition: transform 200ms ease-out;
+	-webkit-transition: transform 200ms ease-out;
+	transition: transform 200ms ease-out;
+	width: 100%;
+	z-index: 1;
+}
+
+.site-search.active .search-modal {
+	height: auto;
+	overflow: visible;
+	-moz-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+.site-search .search-modal input {
+	background: none;
+	border: none;
+	display: block;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-size: 2.827em;
+	font-weight: 500;
+	padding: 0.5em 80px;
+	width: 100%;
+}
+
+.site-search .search-modal button {
+	background: none;
+	font-size: 1.999em;
+	margin-top: -1em;
+	padding: 0.5em;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+}
+
+.site-search .search-modal button:hover,
+.site-search .search-modal button:focus {
+	background: #00a7e2;
+}
+
+
+.site-search .search-modal svg {
+	fill: #00a7e2;
+	display: block;
+	height: 1em;
+	width: 1em;
+}
+
+.site-search .search-modal button:hover svg,
+.site-search .search-modal button:focus svg {
+	fill: #fff;
+}
+
+
+
+/* ==========================================================================
+   SVG Fallback
+   ========================================================================== */
+
+.no-svg svg {
+	display: none;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    /*a[href]:after {
+        content: " (" attr(href) ")";
+    }*/
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
