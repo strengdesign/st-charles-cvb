@@ -79,6 +79,8 @@ select,
 textarea {
 	background-color: #fff;
 	border-radius: 0;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-weight: 500;
 }
 
 input[type="date"],
@@ -97,13 +99,29 @@ input[type="week"],
 input.text,
 textarea {
 	-webkit-appearance: none;
-	border: 1px solid #acacad;
-	padding: 0.5em;
+	border: 1px solid #9b9da0;
+	padding: 0.75em 1em;
 }
 
 select {
-	border: 1px solid #acacad;
-	padding: 0.5em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	background: #fff url('/images/dropdown.svg') 100% 50% no-repeat;
+	border: 1px solid #9b9da0;
+	padding: 0.75em 64px 0.75em 1em;
+}
+
+select option[disabled][selected] {
+	color: #9b9da0;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+	background-image: url('/images/dropdown-active.svg');
 }
 
 input[type="date"]:focus,
@@ -127,26 +145,28 @@ select:focus {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-	color: #acacad;
+	color: #9b9da0;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-	color: #acacad;
+	color: #9b9da0;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-	color: #acacad;
+	color: #9b9da0;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-	color: #acacad;
+	color: #9b9da0;
 }
 
 label {
 	color: #00a7e2;
+	font-family: 'Brandon Grotesque W01', sans-serif;
+	font-weight: 500;
 }
 
 a.btn,
@@ -409,34 +429,105 @@ img, object, embed {
 
 .hp-event-search {
 	background: #ededee;
+	position: relative;
 }
 
 .hp-event-search .header {
-	color: #808285;
+	color: #9b9da0;
+	font-size: 1em;
 	letter-spacing: 0.1em;
-	margin: 0;
+	margin: 0 0 1em 0;
+	position: relative;
+	text-align: center;
 	text-transform: uppercase;
 }
 
+.hp-event-search .header:after {
+	background: #ceced0;
+	content: '\0020';
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: 1;
+}
+
+.hp-event-search .header span {
+	background: #ededee;
+	display: inline-block;
+	padding: 0 2em;
+	position: relative;
+	vertical-align: middle;
+	z-index: 2;
+}
+
 .hp-event-search .form {
-	float: left;
-	width: 75%;
+	font-size: 1.125em;
+	padding: 2em 4em;
+	text-align: center;
+	width: 78%;
+}
+
+.hp-event-search .form-field {
+	border-right: 1px solid #ceced0;
+	display: inline-block;
+	padding: 0 2em;
+	vertical-align: middle;
+	width: 24%;
+}
+
+.hp-event-search .form-field:last-child {
+	border-right: none;
+}
+
+.hp-event-search .form-field.date-range {
+	width: 49%;
+}
+
+.hp-event-search .form label {
+	color: #58595b;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: right;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 21%;
+}
+
+.hp-event-search .form input,
+.hp-event-search .form select {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.hp-event-search .form .date-range input {
+	margin-left: 4%;
+	width: 34%;
 }
 
 .hp-event-search button {
-	float: right;
-	position: relative;
-	width: 25%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 22%;
 }
 
 .hp-event-search button .icon {
-	position: absolute;
-	left: -1em;
-	border-radius: 100%;
 	background: #fa9c35;
-	top: 50%;
-	padding: 0.5em;
+	border-radius: 100%;
+	left: -1em;
 	margin-top: -1em;
+	padding: 0.5em;
+	position: absolute;
+	top: 50%;
+}
+
+.hp-event-search button .title {
+	font-size: 1.999em;
 }
 
 .hp-event-search button svg {
@@ -446,6 +537,39 @@ img, object, embed {
 	height: 1em;
 }
 
+.hp-audience {
+	padding: 5em 0;
+}
+
+.hp-audience header {
+	text-align: center;
+}
+
+.hp-audience header .icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.hp-audience header svg {
+	display: block;
+	fill: #00a7e2;
+	height: 5em;
+	width: 5em;
+}
+
+.hp-audience .title {
+	margin: 0.5em 0 0 0;
+}
+
+.hp-audience .sub-title {
+	color: #9b9da0;
+	font-size: 1.125em;
+	text-transform: uppercase;
+}
+
+.hp-planners {
+	background: #f6f6f7;
+}
 .site-header {
 	padding: 2em 0;
 	position: relative;
@@ -712,6 +836,13 @@ img, object, embed {
 }
 
 
+/* ==========================================================================
+   jQuery UI
+   ========================================================================== */
+
+.ui-datepicker{
+	z-index: 9999 !important;
+}
 
 /* ==========================================================================
    SVG Fallback

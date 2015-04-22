@@ -43,5 +43,25 @@ $(function () {
 		}
 	});
 
+		
+	/* ==========================================================================
+	   Date picker
+	   ========================================================================== */
+	$('.date-from').datepicker({
+		defaultDate: '+1w',
+		numberOfMonths: 1,
+		onClose: function (selectedDate) {
+			$('.date-to').datepicker('option', 'minDate', selectedDate);
+		}
+	});
+
+	$('.date-to').datepicker({
+		defaultDate: '+1w',
+		numberOfMonths: 1,
+		onClose: function (selectedDate) {
+			$('.date-from').datepicker('option', 'maxDate', selectedDate);
+		}
+	});
+
 
 });

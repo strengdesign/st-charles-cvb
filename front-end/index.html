@@ -23,6 +23,7 @@
 	<meta property="og:site_name" content="St. Charles Convention and Visitors Bureau">
 	<link href="http://fast.fonts.net/cssapi/2312f12f-26e7-47da-83fa-ad4e5b5885a7.css" rel="stylesheet">
 	<link href="/css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="/css/jquery-ui.css" type="text/css" rel="stylesheet">
 	<link href="/css/main.css" type="text/css" rel="stylesheet">
 	<script src="/scripts/modernizr.js"></script>
 </head>
@@ -59,6 +60,24 @@
 			<symbol id="svg-trees" viewBox="0 0 64 64">
 				<path d="M11.75,0L1,27.64h9.95v7.04h2.35v-7.04h9.19L11.75,0z M4.44,25.3l7.31-18.81l7.31,18.81H4.44z M50.83,5.71L38.65,37.03 h11.13v5.86h2.35v-5.86H63L50.83,5.71z M42.09,34.68l8.74-22.48l8.74,22.48H42.09z M13.94,56.96h12.31V64h2.35v-7.04h12.31 L27.43,22.28L13.94,56.96z M17.38,54.62l10.05-25.85l10.05,25.85H17.38z" />
 			</symbol> <!-- /svg-trees -->
+
+			<symbol id="svg-visitors" viewBox="0 0 64 64">
+				<path d="M31.9,13.8c-4,0-7.3,3.3-7.3,7.4c0,4.1,3.3,7.4,7.3,7.4c4,0,7.3-3.3,7.3-7.4C39.1,17.1,35.9,13.8,31.9,13.8z M31.9,26.5 c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c2.9,0,5.3,2.4,5.3,5.3C37.1,24.1,34.8,26.5,31.9,26.5z" />
+				<path d="M31.9,4c-9.4,0-17,8-17,17.7c0,12.2,15.5,30.9,16.2,31.6l0.8,0.9l0.8-0.9c0.7-0.8,16.3-19.5,16.2-31.7 C48.8,12,41.2,4,31.9,4z M31.8,51.1c-3.1-3.9-15-19.4-15-29.4c0-8.7,6.7-15.7,15-15.7c8.2,0,14.9,7.1,15,15.7 C46.9,31.7,35,47.2,31.8,51.1z" />
+				<path d="M50,41h-6v2h4l4,15H12l4-15h3v-2h-5L9,60h46L50,41z" />
+			</symbol> <!-- /svg-visitors -->
+
+			<symbol id="svg-planners" viewBox="0 0 64 64">
+				<path d="M11.1,24.3c-3.1,0-5.6,2.5-5.6,5.5c0,3.1,2.5,5.5,5.6,5.5s5.6-2.5,5.6-5.5C16.7,26.8,14.2,24.3,11.1,24.3z M11.1,33.4 c-2,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5C14.6,31.7,13.1,33.4,11.1,33.4z" />
+				<path d="M11.1,37.5c-4.5,0-8.1,3.6-8.1,8.2c0,3,1,4.1,1.2,4.3c1.5,1.3,2.7,4,2.7,6c0,2.8,1.9,5,4.2,5s4.2-2.3,4.2-5 c0-1.9,1.2-4.7,2.7-6c0.2-0.2,1.2-1.2,1.2-4.3C19.2,41.1,15.6,37.5,11.1,37.5z M16.6,48.5c-1.9,1.8-3.3,5-3.3,7.4 c0,1.6-1,2.9-2.2,2.9s-2.2-1.3-2.2-2.9c0-2.5-1.5-5.8-3.3-7.4c0,0-0.6-0.7-0.6-2.9c0-3.4,2.7-6.1,6-6.1s6.1,2.7,6.1,6.1 C17.2,47.8,16.6,48.5,16.6,48.5L16.6,48.5z" />
+				<path d="M32.6,3C29.5,3,27,5.5,27,8.5s2.5,5.5,5.6,5.5s5.6-2.5,5.6-5.5C38.1,5.5,35.6,3,32.6,3z M32.6,12c-2,0-3.5-1.6-3.5-3.5 S30.6,5,32.6,5s3.5,1.6,3.5,3.5S34.4,12,32.6,12z" />
+				<path d="M32.6,16.2c-4.5,0-8.1,3.6-8.1,8.2c0,3,1,4.1,1.2,4.3c1.5,1.3,2.7,4,2.7,6c0,2.8,1.9,5,4.2,5s4.2-2.3,4.2-5 c0-1.9,1.2-4.7,2.7-6c0.2-0.2,1.2-1.2,1.2-4.3C40.7,19.9,37,16.2,32.6,16.2z M38.1,27.2c-1.9,1.8-3.3,5-3.3,7.4 c0,1.6-1,2.9-2.2,2.9s-2.2-1.3-2.2-2.9c0-2.5-1.5-5.8-3.3-7.4c0,0-0.6-0.7-0.6-2.9c0-3.4,2.7-6.1,6-6.1s6.1,2.7,6.1,6.1 C38.6,26.5,38.1,27.1,38.1,27.2z" />
+				<path d="M53,24.3c-3.1,0-5.6,2.5-5.6,5.5c0,3.1,2.5,5.5,5.6,5.5c3.1,0,5.6-2.5,5.6-5.5C58.5,26.8,56,24.3,53,24.3z M53,33.4 c-2,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5C56.5,31.7,54.9,33.4,53,33.4z" />
+				<path d="M52.9,37.5c-4.5,0-8.1,3.6-8.1,8.2c0,3,1,4.1,1.2,4.3c1.5,1.3,2.7,4,2.7,6c0,2.8,1.9,5,4.2,5c2.3,0,4.2-2.3,4.2-5 c0-1.9,1.2-4.7,2.7-6c0.2-0.2,1.2-1.2,1.2-4.3C61.1,41.1,57.5,37.5,52.9,37.5z M58.5,48.5c-1.9,1.8-3.3,5-3.3,7.4 c0,1.6-1,2.9-2.2,2.9c-1.1,0-2.2-1.3-2.2-2.9c0-2.5-1.5-5.8-3.3-7.4c0,0-0.6-0.7-0.6-2.9c0-3.4,2.7-6.1,6-6.1s6.1,2.7,6.1,6.1 C59,47.8,58.5,48.5,58.5,48.5z" />
+				<path d="M26.1,33.1l-1.6-1.3l-6.1,7.1l1.6,1.3L26.1,33.1z" />
+				<path d="M38.9,33.1l6.1,7.1l1.6-1.3l-6.1-7.1L38.9,33.1z" />
+				<path d="M18.3,56.9h27.6v-2.1H18.3V56.9z" />
+			</symbol> <!-- /svg-planners -->
 
 		</defs>
 	</svg>
@@ -175,7 +194,28 @@
 		<form action="" class="clearfix">
 
 			<div class="form">
-				<h4 class="header">Search Events</h4>
+				<h4 class="header"><span>Search by Date Range, Keyword &amp; Category</span></h4>
+
+				<div class="form-field date-range">
+					<label for="date-range">Date Range</label>
+					<input type="text" placeholder="FROM" id="date-range" class="date-from">
+					<input type="text" placeholder="TO" class="date-to">
+				</div> <!-- /form-field -->
+
+				<div class="form-field">
+					<input type="text" placeholder="KEYWORD">
+				</div> <!-- /form-field -->
+
+				<div class="form-field">
+					<select>
+						<option disabled selected>CATEGORY</option>
+						<option>Category 1</option>
+						<option>Category 2</option>
+						<option>Category 3</option>
+						<option>Category 4</option>
+					</select>
+				</div> <!-- /form-field -->
+
 			</div> <!-- /form -->
 
 			<button>
@@ -184,10 +224,42 @@
 						<use xlink:href="#svg-arrow-right"></use>
 					</svg>
 				</span> <!-- /icon -->
-				Search Events
+				<span class="title">Search Events</span>
 			</button>
 		</form>
 	</section> <!-- /hp-event-search -->
+
+	<section class="hp-visitors hp-audience">
+		<div class="content">
+
+			<header>
+				<span class="icon">
+					<svg data-fallback="/images/svg-fallback/svg-visitors.png">
+						<use xlink:href="#svg-visitors"></use>
+					</svg>
+				</span> <!-- /icon -->
+				<h1 class="title">Visitors</h1>
+				<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+			</header>
+
+		</div> <!-- /content -->
+	</section> <!-- /hp-visitors -->
+
+	<section class="hp-planners hp-audience">
+		<div class="content">
+
+			<header>
+				<span class="icon">
+					<svg data-fallback="/images/svg-fallback/svg-planners.png">
+						<use xlink:href="#svg-planners"></use>
+					</svg>
+				</span> <!-- /icon -->
+				<h1 class="title">Planners</h1>
+				<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+			</header>
+
+		</div> <!-- /content -->
+	</section> <!-- /hp-planners -->
 
 	<p>content</p>
 	<p>content</p>
@@ -234,6 +306,7 @@
 	</footer> <!-- /site-footer -->
 
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="/scripts/jquery-ui.js"></script>
 	<script src="/scripts/scripts.js"></script>
 	<script type="text/javascript">
 		(function (i, s, o, g, r, a, m) {
