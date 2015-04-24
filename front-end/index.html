@@ -48,6 +48,10 @@
 				<path d="M44.3,27.1c0-4.7-1.7-8.8-5.1-12.2c-3.4-3.4-7.4-5.1-12.2-5.1s-8.8,1.7-12.2,5.1c-3.4,3.4-5.1,7.4-5.1,12.2 c0,4.7,1.7,8.8,5.1,12.2c3.4,3.4,7.4,5.1,12.2,5.1s8.8-1.7,12.2-5.1C42.6,35.9,44.3,31.8,44.3,27.1z M64,59.1c0,1.3-0.5,2.5-1.5,3.5 c-1,1-2.1,1.5-3.5,1.5c-1.4,0-2.5-0.5-3.5-1.5L42.4,49.4c-4.6,3.2-9.7,4.8-15.3,4.8c-3.7,0-7.2-0.7-10.5-2.1 c-3.3-1.4-6.2-3.3-8.7-5.8c-2.4-2.4-4.3-5.3-5.8-8.7C0.7,34.3,0,30.7,0,27.1c0-3.7,0.7-7.2,2.1-10.5c1.4-3.3,3.3-6.2,5.8-8.7 c2.4-2.4,5.3-4.3,8.7-5.8C19.9,0.7,23.4,0,27.1,0s7.2,0.7,10.5,2.1c3.3,1.4,6.2,3.3,8.7,5.8c2.4,2.4,4.3,5.3,5.8,8.7 c1.4,3.3,2.1,6.9,2.1,10.5c0,5.6-1.6,10.8-4.8,15.3l13.2,13.2C63.5,56.6,64,57.7,64,59.1z" />
 			</symbol> <!-- /svg-search -->
 
+			<symbol id="svg-arrow-left" viewBox="0 0 64 64">
+				<path d="M31.6,7.5c-2-2-5.3-2-7.3,0L0,32l24.3,24.5c1,1,2.3,1.5,3.6,1.5s2.6-0.5,3.6-1.5c2-2,2-5.3,0-7.3L19.7,37.2h39.1 c2.8,0,5.2-2.3,5.2-5.2s-2.3-5.2-5.2-5.2H19.7l11.8-11.9C33.6,12.8,33.6,9.6,31.6,7.5L31.6,7.5z" />
+			</symbol> <!-- /svg-arrow-left -->
+
 			<symbol id="svg-arrow-right" viewBox="0 0 64 64">
 				<path d="M32.44,7.52c-2.02,2.03-2.02,5.32,0,7.35L44.26,26.8H5.16C2.31,26.8,0,29.13,0,32c0,2.87,2.31,5.2,5.16,5.2h39.11 L32.44,49.12c-2.02,2.03-2.02,5.32,0,7.35c1.01,1.01,2.33,1.52,3.64,1.52s2.64-0.51,3.64-1.52L64,32L39.73,7.52 C37.72,5.49,34.46,5.49,32.44,7.52L32.44,7.52z" />
 			</symbol> <!-- /svg-arrow-right -->
@@ -201,7 +205,7 @@
 		</div> <!-- /content -->
 	</header> <!-- /site-header -->
 
-	<section class="hero">
+	<section class="hero carousel" data-speed="6000">
 
 		<article class="slide">
 			<img src="/images/temp/hero.jpg" alt="Naturally Charming for Getaways & Groups">
@@ -213,9 +217,81 @@
 						</svg>
 					</span> <!-- /icon -->
 					<h2 class="sub-title">Naturally Charming for</h2>
-					<h1 class="title">Getaways & Groups</h1>
+					<h1 class="title">Getaways &amp; Groups</h1>
+					<a href="#" class="btn cta">Learn More</a>
+
+				</div> <!-- /overlay-content -->
+
+				<span class="arrow prev">
+					<svg data-fallback="/images/svg-fallback/arrow-left.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
+				<span class="arrow next">
+					<svg data-fallback="/images/svg-fallback/arrow-right.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
+			</div> <!-- /overlay -->
+		</article> <!-- /slide -->
+
+		<article class="slide">
+			<img src="/images/temp/hero2.jpg" alt="Lorem Ipsum Dolor Sit Consectetur Adipiscing">
+			<div class="overlay">
+				<div class="overlay-content">
+					<span class="icon">
+						<svg data-fallback="/images/svg-fallback/svg-visitors.png">
+							<use xlink:href="#svg-visitors"></use>
+						</svg>
+					</span> <!-- /icon -->
+					<h2 class="sub-title">Lorem Ipsum Dolor Sit</h2>
+					<h1 class="title">Consectetur Adipiscing</h1>
 					<a href="#" class="btn cta">Learn More</a>
 				</div> <!-- /overlay-content -->
+
+				<span class="arrow prev">
+					<svg data-fallback="/images/svg-fallback/arrow-left.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
+				<span class="arrow next">
+					<svg data-fallback="/images/svg-fallback/arrow-right.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
+			</div> <!-- /overlay -->
+		</article> <!-- /slide -->
+
+		<article class="slide">
+			<img src="/images/temp/hero3.jpg" alt="Cras Fringilla Interdum Tempor Eget Dignissum Faucibus">
+			<div class="overlay">
+				<div class="overlay-content">
+					<span class="icon">
+						<svg data-fallback="/images/svg-fallback/svg-planners.png">
+							<use xlink:href="#svg-planners"></use>
+						</svg>
+					</span> <!-- /icon -->
+					<h2 class="sub-title">Cras Fringilla Interdum</h2>
+					<h1 class="title">Tempor Eget Dignissum Faucibus</h1>
+					<a href="#" class="btn cta">Learn More</a>
+				</div> <!-- /overlay-content -->
+
+				<span class="arrow prev">
+					<svg data-fallback="/images/svg-fallback/arrow-left.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
+				<span class="arrow next">
+					<svg data-fallback="/images/svg-fallback/arrow-right.png">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
+					</svg>
+				</span> <!-- /arrow -->
+
 			</div> <!-- /overlay -->
 		</article> <!-- /slide -->
 
@@ -225,19 +301,23 @@
 		<form action="" class="clearfix">
 
 			<div class="form">
-				<h4 class="header"><span>Search by Date Range, Keyword &amp; Category</span></h4>
+				<h4 class="header"><span>Search Events by Date Range, Keyword &amp; Category</span></h4>
 
-				<div class="form-field date-range">
+				<div class="form-field search-date">
 					<label for="date-range">Date Range</label>
-					<input type="text" placeholder="FROM" id="date-range" class="date-from">
-					<input type="text" placeholder="TO" class="date-to">
+					<div class="sub-field">
+						<input type="text" placeholder="FROM" id="date-range" class="date-from">
+					</div> <!-- /sub-field -->
+					<div class="sub-field">
+						<input type="text" placeholder="TO" class="date-to">
+					</div> <!-- /sub-field -->
 				</div> <!-- /form-field -->
 
-				<div class="form-field">
+				<div class="form-field search-keyword">
 					<input type="text" placeholder="KEYWORD">
 				</div> <!-- /form-field -->
 
-				<div class="form-field">
+				<div class="form-field search-category">
 					<select>
 						<option disabled selected>CATEGORY</option>
 						<option>Category 1</option>
@@ -247,16 +327,17 @@
 					</select>
 				</div> <!-- /form-field -->
 
+				<button>
+					<span class="icon">
+						<svg data-fallback="/images/svg-fallback/svg-arrow-right.png">
+							<use xlink:href="#svg-arrow-right"></use>
+						</svg>
+					</span> <!-- /icon -->
+					<span class="title">Search Events</span>
+				</button>
+
 			</div> <!-- /form -->
 
-			<button>
-				<span class="icon">
-					<svg data-fallback="/images/svg-fallback/svg-arrow-right.png">
-						<use xlink:href="#svg-arrow-right"></use>
-					</svg>
-				</span> <!-- /icon -->
-				<span class="title">Search Events</span>
-			</button>
 		</form>
 	</section> <!-- /hp-event-search -->
 
@@ -264,20 +345,22 @@
 		<div class="content">
 
 			<header class="section-head">
-				<span class="icon">
-					<svg data-fallback="/images/svg-fallback/svg-visitors.png">
-						<use xlink:href="#svg-visitors"></use>
-					</svg>
-				</span> <!-- /icon -->
-				<h1 class="title">Visitors</h1>
-				<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+				<a href="#">
+					<span class="icon">
+						<svg data-fallback="/images/svg-fallback/svg-visitors.png">
+							<use xlink:href="#svg-visitors"></use>
+						</svg>
+					</span> <!-- /icon -->
+					<h1 class="title">Visitors</h1>
+					<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+				</a>
 			</header> <!-- /section-head -->
 
 			<div class="columns clearfix">
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Events</h4>
+						<h4 class="title"><a href="#">Events</a></h4>
 						<a href="#" class="cta">View All</a>
 					</header> <!-- /col-head -->
 
@@ -314,7 +397,7 @@
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Restaurants</h4>
+						<h4 class="title"><a href="#">Restaurants</a></h4>
 						<a href="#" class="cta">View All</a>
 					</header> <!-- /col-head -->
 
@@ -351,7 +434,7 @@
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Attractions</h4>
+						<h4 class="title"><a href="#">Attractions</a></h4>
 						<a href="#" class="cta">View All</a>
 					</header> <!-- /col-head -->
 
@@ -397,24 +480,25 @@
 		<div class="content">
 
 			<header class="section-head">
-				<span class="icon">
-					<svg data-fallback="/images/svg-fallback/svg-planners.png">
-						<use xlink:href="#svg-planners"></use>
-					</svg>
-				</span> <!-- /icon -->
-				<h1 class="title">Planners</h1>
-				<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+				<a href="#">
+					<span class="icon">
+						<svg data-fallback="/images/svg-fallback/svg-planners.png">
+							<use xlink:href="#svg-planners"></use>
+						</svg>
+					</span> <!-- /icon -->
+					<h1 class="title">Planners</h1>
+					<h2 class="sub-title">Lorem ipsum dolor sit adipiscing elit.</h2>
+				</a>
 			</header> <!-- /section-head -->
 
 			<div class="columns clearfix">
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Meetings</h4>
-						<a href="#" class="cta">View All</a>
+						<h4 class="title"><a href="#">Meetings</a></h4>
 					</header> <!-- /col-head -->
 
-					<article class="hp-featured" style="background-image: url('/images/temp/hp-feature.jpg');">
+					<article class="hp-featured single" style="background-image: url('/images/temp/hp-feature.jpg');">
 						<a href="#">
 							<div class="overlay">
 								<h3 class="title">Get down to business in St. Charles!</h3>
@@ -433,7 +517,7 @@
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Facilities</h4>
+						<h4 class="title"><a href="#">Facilities</a></h4>
 						<a href="#" class="cta">View All</a>
 					</header> <!-- /col-head -->
 
@@ -456,11 +540,10 @@
 
 				<div class="col">
 					<header class="col-head clearfix">
-						<h4 class="title">Special Events</h4>
-						<a href="#" class="cta">View All</a>
+						<h4 class="title"><a href="#">Special Events</a></h4>
 					</header> <!-- /col-head -->
 
-					<article class="hp-featured" style="background-image: url('/images/temp/hp-feature.jpg');">
+					<article class="hp-featured single" style="background-image: url('/images/temp/hp-feature.jpg');">
 						<a href="#">
 							<div class="overlay">
 								<h3 class="title">Lorem ipsum dolor sit amet, consectetur.</h3>
@@ -475,11 +558,11 @@
 						</a>
 					</article> <!-- /hp-featured -->
 
-			</div> <!-- /columns -->
+				</div> <!-- /columns -->
 
-			<a href="#" class="btn section-cta">Learn More</a>
+				<a href="#" class="btn section-cta">Learn More</a>
 
-		</div> <!-- /content -->
+			</div> <!-- /content -->
 	</section> <!-- /hp-planners -->
 
 	<footer class="site-footer">
@@ -514,7 +597,7 @@
 			<section class="footer-contact">
 
 				<ul itemscope="" itemtype="http://schema.org/LocalBusiness">
-					<li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+					<li class="address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
 						<span class="street" itemprop="streetAddress">311 N. Second St.</span>,
 						Suite 100
 						<span itemprop="addressLocality">St. Charles</span>, <span itemprop="addressRegion">IL</span> <span itemprop="postalCode">60174</span>
