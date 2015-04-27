@@ -7,15 +7,7 @@
 	<meta name="description" content="Saint Charles, Illinois nestled in the Fox Valley area and an hour west of Chicago, St. Charles bursts with naturally charming adventures.">
 	<meta name="author" content="Streng Design & Advertising">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon-180.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/favicon-76.png">
-	<link rel="apple-touch-icon" href="/images/icons/favicon-57.png">
 	<link rel="icon" sizes="32x32" href="/images/icons/favicon-32.png">
-	<meta name="application-name" content="ASt. Charles Convention and Visitors Bureau">
-	<meta name="msapplication-TileColor" content="#0053a0">
-	<meta name="msapplication-TileImage" content="/images/icons/mstile.png">
 	<meta property="og:title" content="St. Charles Convention and Visitors Bureau">
 	<meta property="og:description" content="Saint Charles, Illinois nestled in the Fox Valley area and an hour west of Chicago, St. Charles bursts with naturally charming adventures.">
 	<meta property="og:type" content="website">
@@ -25,6 +17,7 @@
 	<link href="/css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="/css/jquery-ui.css" type="text/css" rel="stylesheet">
 	<link href="/css/main.css" type="text/css" rel="stylesheet">
+	<script src="/scripts/respond.js"></script>
 	<script src="/scripts/modernizr.js"></script>
 </head>
 <body>
@@ -47,6 +40,10 @@
 			<symbol id="svg-search" viewBox="0 0 64 64">
 				<path d="M44.3,27.1c0-4.7-1.7-8.8-5.1-12.2c-3.4-3.4-7.4-5.1-12.2-5.1s-8.8,1.7-12.2,5.1c-3.4,3.4-5.1,7.4-5.1,12.2 c0,4.7,1.7,8.8,5.1,12.2c3.4,3.4,7.4,5.1,12.2,5.1s8.8-1.7,12.2-5.1C42.6,35.9,44.3,31.8,44.3,27.1z M64,59.1c0,1.3-0.5,2.5-1.5,3.5 c-1,1-2.1,1.5-3.5,1.5c-1.4,0-2.5-0.5-3.5-1.5L42.4,49.4c-4.6,3.2-9.7,4.8-15.3,4.8c-3.7,0-7.2-0.7-10.5-2.1 c-3.3-1.4-6.2-3.3-8.7-5.8c-2.4-2.4-4.3-5.3-5.8-8.7C0.7,34.3,0,30.7,0,27.1c0-3.7,0.7-7.2,2.1-10.5c1.4-3.3,3.3-6.2,5.8-8.7 c2.4-2.4,5.3-4.3,8.7-5.8C19.9,0.7,23.4,0,27.1,0s7.2,0.7,10.5,2.1c3.3,1.4,6.2,3.3,8.7,5.8c2.4,2.4,4.3,5.3,5.8,8.7 c1.4,3.3,2.1,6.9,2.1,10.5c0,5.6-1.6,10.8-4.8,15.3l13.2,13.2C63.5,56.6,64,57.7,64,59.1z" />
 			</symbol> <!-- /svg-search -->
+
+			<symbol id="svg-phone" viewBox="0 0 64 64">
+				<path d="M12.9,27.7C18,37.8,26.2,46,36.3,51.1l7.8-7.8c1-1,2.4-1.3,3.6-0.9c4,1.3,8.3,2,12.7,2c2,0,3.6,1.6,3.6,3.6v12.4 c0,2-1.6,3.6-3.6,3.6C27.1,64,0,36.9,0,3.6C0,1.6,1.6,0,3.6,0H16c2,0,3.6,1.6,3.6,3.6c0,4.4,0.7,8.7,2,12.7c0.4,1.2,0.1,2.6-0.9,3.6 L12.9,27.7L12.9,27.7z" />
+			</symbol> <!-- /svg-phone -->
 
 			<symbol id="svg-arrow-left" viewBox="0 0 64 64">
 				<path d="M31.6,7.5c-2-2-5.3-2-7.3,0L0,32l24.3,24.5c1,1,2.3,1.5,3.6,1.5s2.6-0.5,3.6-1.5c2-2,2-5.3,0-7.3L19.7,37.2h39.1 c2.8,0,5.2-2.3,5.2-5.2s-2.3-5.2-5.2-5.2H19.7l11.8-11.9C33.6,12.8,33.6,9.6,31.6,7.5L31.6,7.5z" />
@@ -200,7 +197,12 @@
 				</div> <!-- /search-modal -->
 			</section> <!-- /site-search -->
 
-			<span class="phone">800-777-4373</span>
+			<span class="phone">
+				<svg data-fallback="/images/svg-fallback/svg-phone.png">
+					<use xlink:href="#svg-phone"></use>
+				</svg>
+				800-777-4373
+			</span>
 
 		</div> <!-- /content -->
 	</header> <!-- /site-header -->
