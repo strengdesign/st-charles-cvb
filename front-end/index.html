@@ -117,9 +117,25 @@
 	<section class="book-room">
 		<div class="content">
 			<h4 class="header">Book a Room</h4>
-			<!--
-			<script src="http://visitstcharles.widgets.bookdirect.net/widgets/search_widget.js.php?id=675" type="text/javascript"></script>
-			-->
+			<form method="get" action="http://visitstcharles.bookdirect.net/" target="_blank">
+				<input type="hidden" name="cloneID" id="cloneID" value="1790">
+				<input type="hidden" name="campaign" id="campaign" value="visitstcharles.com header">
+				<input type="hidden" name="group_id" id="group_id" value="5155">
+				<input type="hidden" name="rooms" value="1">
+				<input type="hidden" name="nights" id="nights" value="1">
+
+				<input type="text" name="start-date" id="start-date" class="date-from" placeholder="CHECK-IN">
+				<input type="text" name="end-date" id="end-date" class="date-to" placeholder="CHECK-OUT">
+
+				<select id="lodgingID" name="lodgingID">
+					<option value="103" selected="selected">All Lodging</option>
+					<option value="305">Hotel</option>
+					<option value="272">Resort</option>
+					<option value="306">Inn</option>
+				</select>
+
+				<button>Search</button>
+			</form>
 		</div> <!-- /content -->
 	</section>
 
@@ -224,13 +240,13 @@
 
 				</div> <!-- /overlay-content -->
 
-				<span class="arrow prev">
+				<span class="arrow prev" title="Previous">
 					<svg data-fallback="/images/svg-fallback/arrow-left.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
 					</svg>
 				</span> <!-- /arrow -->
 
-				<span class="arrow next">
+				<span class="arrow next" title="Next">
 					<svg data-fallback="/images/svg-fallback/arrow-right.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
 					</svg>
@@ -253,13 +269,13 @@
 					<a href="#" class="btn cta">Learn More</a>
 				</div> <!-- /overlay-content -->
 
-				<span class="arrow prev">
+				<span class="arrow prev" title="Previous">
 					<svg data-fallback="/images/svg-fallback/arrow-left.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
 					</svg>
 				</span> <!-- /arrow -->
 
-				<span class="arrow next">
+				<span class="arrow next" title="Next">
 					<svg data-fallback="/images/svg-fallback/arrow-right.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
 					</svg>
@@ -282,13 +298,13 @@
 					<a href="#" class="btn cta">Learn More</a>
 				</div> <!-- /overlay-content -->
 
-				<span class="arrow prev">
+				<span class="arrow prev" title="Previous">
 					<svg data-fallback="/images/svg-fallback/arrow-left.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-left"></use>
 					</svg>
 				</span> <!-- /arrow -->
 
-				<span class="arrow next">
+				<span class="arrow next" title="Next">
 					<svg data-fallback="/images/svg-fallback/arrow-right.png">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-right"></use>
 					</svg>

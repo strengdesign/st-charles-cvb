@@ -294,15 +294,71 @@ img, object, embed {
 
 .book-room {
 	background: #fa9c35;
-	padding: 1em 0;
+	font-size: 0.875em;
+	padding: 0.75em 0;
 	text-align: center;
 }
 
 .book-room .header {
 	color: #fff;
+	display: inline-block;
 	font-weight: 700;
 	margin: 0;
 	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.book-room form {
+	display: inline-block;
+	margin: 0.25em 0;
+	max-width: 58em;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.book-room input,
+.book-room select {
+	border: none;
+	display: inline-block;
+	margin-left: 1.5%;
+	vertical-align: middle;
+	width: 26%;
+}
+
+.book-room select {
+	background-image: url('/images/dropdown-orange.svg');
+	padding: 0.5em 64px 0.5em 0.75em;
+	text-transform: uppercase;
+}
+
+.book-room select:focus {
+	background-image: url('/images/dropdown-orange-active.svg');
+}
+
+.book-room input {
+	border: 1px solid #fff;
+	padding: 0.5em 0.75em;
+}
+
+.book-room input:focus {
+	border-color: #fff;
+}
+
+.book-room button {
+	background: #ee7507;
+	border: 1px solid #ee7507;
+	display: inline-block;
+	margin-left: 1.5%;
+	padding: 0.5em 0.75em;
+	vertical-align: middle;
+	width: 14%;
+}
+
+.book-room button:hover,
+.book-room button:focus {
+	background: #dd6000;
+	border-color: #dd6000;
 }
 
 .carousel {
@@ -1100,10 +1156,10 @@ background: #fa9c35;
 	-o-transform-origin: 50% 0;
 	-webkit-transform-origin: 50% 0;
 	transform-origin: 50% 0;
-	-moz-transition: transform 200ms ease-out, opacity 200ms ease-out;
-	-o-transition: transform 200ms ease-out, opacity 200ms ease-out;
-	-webkit-transition: transform 200ms ease-out, opacity 200ms ease-out;
-	transition: transform 200ms ease-out, opacity 200ms ease-out;
+	-moz-transition: all 200ms ease-out, opacity 200ms ease-out;
+	-o-transition: all 200ms ease-out, opacity 200ms ease-out;
+	-webkit-transition: all 200ms ease-out, opacity 200ms ease-out;
+	transition: all 200ms ease-out, opacity 200ms ease-out;
 	-moz-transition-delay: 200ms;
 	-o-transition-delay: 200ms;
 	-webkit-transition-delay: 200ms;
@@ -1202,10 +1258,10 @@ background: #fa9c35;
 	-o-transform-origin: 50% 0;
 	-webkit-transform-origin: 50% 0;
 	transform-origin: 50% 0;
-	-moz-transition: transform 200ms ease-out;
-	-o-transition: transform 200ms ease-out;
-	-webkit-transition: transform 200ms ease-out;
-	transition: transform 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	-webkit-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
 	width: 100%;
 	z-index: 1;
 }
@@ -1941,6 +1997,84 @@ background: #fa9c35;
 	h4 {
 		font-size: 1.25em;
 		line-height: 1.4;
+	}
+
+	.book-room {
+		background: none;
+		font-size: 1em;
+		padding: 0;
+	}
+
+	.book-room .content {
+		padding: 0;
+	}
+
+	.book-room .header {
+		background: #fa9c35;
+		cursor: pointer;
+		display: block;
+		padding: 0.75em 20px;
+	}
+
+	.book-room.active .header {
+		background: #ee7507;
+	}
+
+	.book-room form {
+		background: #fa9c35;
+		display: block;
+		height: 0;
+		margin: 0 auto;
+		padding: 0 20px;
+		overflow: hidden;
+		text-align: center;
+		-moz-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		-moz-transform-origin: 50% 0;
+		-ms-transform-origin: 50% 0;
+		-o-transform-origin: 50% 0;
+		-webkit-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-moz-transition: all 200ms ease-out;
+		-o-transition: all 200ms ease-out;
+		-webkit-transition: all 200ms ease-out;
+		transition: all 200ms ease-out;
+	}
+
+	.book-room.active form {
+		height: auto;
+		overflow: visible;
+		padding: 1.5em 20px;
+		-moz-transform: scaleY(1);
+		-ms-transform: scaleY(1);
+		-o-transform: scaleY(1);
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+
+	.book-room input,
+	.book-room select {
+		display: block;
+		margin: 0 auto 0.75em auto;
+		max-width: 20em;
+		width: 100%;
+	}
+
+	.book-room input {
+		padding: 0.75em 1em;
+	}
+
+	.book-room select {
+		padding: 0.75em 64px 0.75em 1em;
+	}
+
+	.book-room button {
+		margin-left: 0;
+		padding: 0.75em 1.5em;
+		width: auto;
 	}
 
 	.content {
